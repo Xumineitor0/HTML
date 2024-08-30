@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysia - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#progressao">Progressão</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <h1>Memorial de Elysia</h1>
+        <p>Aquela que viu os erros dos humanos e ainda assim aceitou seus erros e os amou mais do que a si mesma.</p>
+    </section>
+
+    <section id="progressao" class="progressao">
+        <h2>Uma pequena parte da história da personagem</h2>
+        <div class="imagem-container">
+            <img src="https://upload-os-bbs.hoyolab.com/upload/2022/10/14/106765572/270c4f02aeaa81e82f53670db4380f0a_5687300188710291494.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70" alt="Primeira Fase">
+            <figcaption>O dia que a filha de deus desceu sobre a terra dos humanos, pouco se sabia sobre ela, como um milagre sobre uma terra devastada ela nasceu para dar a esperança que estava desapareçendo.</figcaption>
+
+            <img src="https://scontent.frvd2-1.fna.fbcdn.net/v/t39.30808-6/279152780_1100570873886859_6686576372747308239_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=QD19z5LIrpEQ7kNvgFwiXl1&_nc_ht=scontent.frvd2-1.fna&oh=00_AYAFCoE-PwdLeWjNjyYlOTXTFNckz6FFI3sVr-6K4f58WA&oe=66D77B05" alt="Segunda Fase">
+            <figcaption>O momento em que ela se sacrificou pelo bem da humanidade, junto aos seus companheiros, ao cometer uma "traição" para restaurar a esperança que se perdeu após um grande desastre, ela uniu os humanso contra si mesma, para que assim eles pudessem sobreviver ao ultimo teste.</figcaption>
+
+            <img src="https://s1.zerochan.net/Houkai.3rd.600.3870654.jpg" alt="Terceira Fase">
+            <figcaption>E por fim, o momento aonde ela entregou sua vontade para a única pessoa que poderia aguentar o peso da 'Origem' e herdar seu titulo. Raiden Mei sua sucessora e aquela que manteve a chama dos 13 viva até o final, vendo o fim de uma história que durou uma era inteira.</figcaption>
+        </div>
+
+        <div class="audio-container">
+            <audio id="background-audio" loop autoplay>
+                <source src="./Arrow.mp3" type="audio/mp3">
+            </audio>
+
+            <div class="audio-controls">
+                <button id="mute-button">🔊</button>
+                <button id="play-button">▶️</button>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/_BUh64YHE30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form action="mailto:seu-email@dominio.com" method="post" enctype="text/plain">
+            <label for="email">Seu Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer class="rodape">
+        <p>&copy; 2024 Hoyoverse. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,248 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f801cf7c;
+}
+
+/* Estilo para o cabeçalho */
+.header {
+    background-image: url('https://upload-os-bbs.hoyolab.com/upload/2022/08/22/11424699/f90aff5620395aa7d52cba5caa8ef935_1724783127667491605.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+}
+
+/* Estilo para o menu de navegação */
+.navbar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #f00eb7;
+}
+
+/* Estilo para a seção de apresentação */
+.inicio {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgba(215, 20, 222, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+/* Estilo para a seção de progressão */
+.progressao {
+    padding: 50px 20px;
+    background-color: #5d3a75;
+    text-align: center;
+}
+
+.progressao h2 {
+    margin-bottom: 50px;
+}
+
+.imagem-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.imagem-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 1px;
+    border: 2px solid #211616;
+    border-radius: 5px;
+}
+
+.imagem-container figure {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.imagem-container figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #efdbea;
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+.video-container a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.video-container a:hover {
+    color: #f0a500;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #d21cc6;
+}
+
+/* Contêiner de vídeo */
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Proporção 16:9 */
+    margin-top: 20px; /* Espaçamento superior */
+    overflow: hidden; /* Oculta o conteúdo excedente */
+}
+
+/* Estilo do iframe do vídeo */
+.video-container iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.audio-container {
+    position: fixed;
+    bottom: 15px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1px;
+    border-radius: 45px;
+    color: rgb(255, 252, 252);
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.audio-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.audio-controls input[type="range"] {
+    width: 100px;
+}
+
+/* Estilo para a seção de contato */
+.contato {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contato form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contato input[type="email"],
+.contato input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contato input[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contato input[type="submit"]:hover {
+    background-color: #f0a500;
+}
+
+/* Estilo para o rodapé */
+.rodape {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 1em;
+    }
+
+    .imagem-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .audio-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .audio-controls input[type="range"] {
+        width: 80%;
+    }
+}
+
+/* Media Queries para telas maiores */
+@media (min-width: 769px) {
+    .audio-controls {
+        gap: 10px;
+    }
+
+    .audio-controls input[type="range"] {
+        width: 150px;
+    }
+}
